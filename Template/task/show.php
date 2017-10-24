@@ -73,6 +73,3 @@
     <?php echo json_encode($items) ?>
 </div>
 
-<?= $this->asset->js(PLUGINS_DIR.'/Relationgraph/Asset/Javascript/vis/vis.js') ?>
-<?= $this->asset->css(PLUGINS_DIR.'/Relationgraph/Asset/Javascript/vis/vis.css') ?>
-<?= $this->asset->js(PLUGINS_DIR.'/Relationgraph/Asset/Javascript/GraphBuilder.js') ?>

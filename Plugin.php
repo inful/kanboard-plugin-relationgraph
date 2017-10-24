@@ -12,6 +12,9 @@ class Plugin extends Base
         $this->route->addRoute('/plugin/relation_graph/:task_id', 'relationgraph', 'show', 'relationgraph');
 
         $this->template->hook->attach('template:task:sidebar:information', 'relationgraph:task/sidebar');
+        $this->hook->on('template:layout:js', array('template' => 'plugins/Relationgraph/Asset/Javascript/vis/vis.js'));
+        $this->hook->on('template:layout:js', array('template' => 'plugins/Relationgraph/Asset/Javascript/GraphBuilder.js'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/Relationgraph/Asset/Javascript/vis/vis.css'));
     }
 
     public function getPluginName()
